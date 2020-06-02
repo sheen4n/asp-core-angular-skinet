@@ -1,10 +1,14 @@
+using System.Linq;
 using System.Reflection;
 using Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure.Data {
-  public class StoreContext : DbContext {
-    public StoreContext(DbContextOptions<StoreContext> options) : base(options) {
+namespace Infrastructure.Data
+{
+  public class StoreContext : DbContext
+  {
+    public StoreContext(DbContextOptions<StoreContext> options) : base(options)
+    {
 
     }
 
@@ -12,9 +16,28 @@ namespace Infrastructure.Data {
     public DbSet<ProductBrand> ProductBrands { get; set; }
     public DbSet<ProductType> ProductTypes { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder) {
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
       base.OnModelCreating(modelBuilder);
       modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+      if (Database.ProviderName == "Microsoft.EntityFrameworkCore.Sqlite")
+      {
+        modelBuilder.Model.GetEntityTypes().ToList().ForEach(
+          entityType =>
+          {
+            var properties = entityType.ClrType
+              .GetProperties()
+              .Where(p => p.PropertyType == typeof(decimal));
+
+            properties.ToList().ForEach(p =>
+              modelBuilder.Entity(entityType.Name)
+              .Property(p.Name)
+              .HasConversion<double>()
+            );
+          }
+        );
+      }
     }
   }
 }
