@@ -1,0 +1,15 @@
+<header>
+  <span *ngIf="hasResults">
+    Showing
+    <strong>
+      {{ (pageNumber - 1) * pageSize + 1 }} -
+      {{ math.min(pageNumber * pageSize, totalCount) }}
+    </strong>
+    of
+    <strong>{{ totalCount }} </strong>Results
+  </span>
+
+  <span *ngIf="!hasResults">
+    There are <strong>0</strong> results for this filter.
+  </span>
+</header>
