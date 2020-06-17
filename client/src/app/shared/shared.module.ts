@@ -4,15 +4,30 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { PagingHeaderComponent } from './components/paging-header/paging-header.component';
 import { PagerComponent } from './components/pager/pager.component';
+import { OrderTotalsComponent } from './components/order-totals/order-totals.component';
+import { BasketSummaryComponent } from './components/basket-summary/basket-summary.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [PagingHeaderComponent, PagerComponent],
-  imports: [CommonModule, PaginationModule.forRoot(), CarouselModule.forRoot()],
+  declarations: [
+    PagingHeaderComponent,
+    PagerComponent,
+    OrderTotalsComponent,
+    BasketSummaryComponent,
+  ],
+  imports: [
+    CommonModule,
+    PaginationModule.forRoot(),
+    CarouselModule.forRoot(),
+    RouterModule,
+  ],
   exports: [
     PaginationModule,
     PagingHeaderComponent,
     PagerComponent,
     CarouselModule,
+    BasketSummaryComponent,
+    OrderTotalsComponent,
   ],
 })
 export class SharedModule {}
