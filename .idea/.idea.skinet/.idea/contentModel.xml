@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_skinet.-508590893.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="API" t="IncludeRecursive">
+        <e p="API.csproj" t="IncludeRecursive" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="BaseApiController.cs" t="Include" />
+          <e p="BasketController.cs" t="Include" />
+          <e p="BuggyController.cs" t="Include" />
+          <e p="ErrorController.cs" t="Include" />
+          <e p="ProductsController.cs" t="Include" />
+          <e p="WeatherForecastController.cs" t="Include" />
+        </e>
+        <e p="Dtos" t="Include">
+          <e p="ProductToReturnDto.cs" t="Include" />
+        </e>
+        <e p="Errors" t="Include">
+          <e p="ApiException.cs" t="Include" />
+          <e p="ApiResponse.cs" t="Include" />
+          <e p="ApiValidationErrorResponse.cs" t="Include" />
+        </e>
+        <e p="Extensions" t="Include">
+          <e p="ApplicationServicesExtensions.cs" t="Include" />
+          <e p="SwaggerServiceExtensions.cs" t="Include" />
+        </e>
+        <e p="Helpers" t="Include">
+          <e p="MappingProfiles.cs" t="Include" />
+          <e p="Pagination.cs" t="Include" />
+          <e p="ProductUrlResolver.cs" t="Include" />
+        </e>
+        <e p="Middleware" t="Include">
+          <e p="ExceptionMiddleware.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="API.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="skinet.db" t="Include" />
+        <e p="Startup.cs" t="Include" />
+        <e p="WeatherForecast.cs" t="Include" />
+        <e p="wwwroot" t="Include">
+          <e p="images" t="Include">
+            <e p="products" t="Include">
+              <e p="boot-ang1.png" t="Include" />
+              <e p="boot-ang2.png" t="Include" />
+              <e p="boot-core1.png" t="Include" />
+              <e p="boot-core2.png" t="Include" />
+              <e p="boot-redis1.png" t="Include" />
+              <e p="glove-code1.png" t="Include" />
+              <e p="glove-code2.png" t="Include" />
+              <e p="glove-react1.png" t="Include" />
+              <e p="glove-react2.png" t="Include" />
+              <e p="hat-core1.png" t="Include" />
+              <e p="hat-react1.png" t="Include" />
+              <e p="hat-react2.png" t="Include" />
+              <e p="sb-ang1.png" t="Include" />
+              <e p="sb-ang2.png" t="Include" />
+              <e p="sb-core1.png" t="Include" />
+              <e p="sb-core2.png" t="Include" />
+              <e p="sb-react1.png" t="Include" />
+              <e p="sb-ts1.png" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Core" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Core.csproj" t="IncludeRecursive" />
+        <e p="Entities" t="Include">
+          <e p="BaseEntity.cs" t="Include" />
+          <e p="BasketItem.cs" t="Include" />
+          <e p="CustomerBasket.cs" t="Include" />
+          <e p="Product.cs" t="Include" />
+          <e p="ProductBrand.cs" t="Include" />
+          <e p="ProductType.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="IBasketRepository.cs" t="Include" />
+          <e p="IGenericRepository.cs" t="Include" />
+          <e p="IProductRepository.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Specifications" t="Include">
+          <e p="BaseSpecification.cs" t="Include" />
+          <e p="ISpecification.cs" t="Include" />
+          <e p="ProductSpecParams.cs" t="Include" />
+          <e p="ProductsWithTypesAndBrandsSpecification.cs" t="Include" />
+          <e p="ProductWithFiltersForCountSpecification.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Infrastructure" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Data" t="Include">
+          <e p="BasketRepository.cs" t="Include" />
+          <e p="Config" t="Include">
+            <e p="ProductConfiguration.cs" t="Include" />
+          </e>
+          <e p="GenericRepository.cs" t="Include" />
+          <e p="Migrations" t="Include">
+            <e p="20200529082316_InitialCreate.cs" t="Include" />
+            <e p="20200529082316_InitialCreate.Designer.cs" t="Include" />
+            <e p="StoreContextModelSnapshot.cs" t="Include" />
+          </e>
+          <e p="ProductRepository.cs" t="Include" />
+          <e p="SeedData" t="Include">
+            <e p="brands.json" t="Include" />
+            <e p="products.json" t="Include" />
+            <e p="types.json" t="Include" />
+          </e>
+          <e p="SpecificationEvaluator.cs" t="Include" />
+          <e p="StoreContext.cs" t="Include" />
+          <e p="StoreContextSeed.cs" t="Include" />
+        </e>
+        <e p="Infrastructure.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="Infrastructure.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="skinet.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
