@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Infrastructure.Identity.Migrations
 {
-    public partial class IdentityInitial : Migration
+    public partial class IdentityMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -79,7 +79,7 @@ namespace Infrastructure.Identity.Migrations
                     Street = table.Column<string>(nullable: true),
                     City = table.Column<string>(nullable: true),
                     State = table.Column<string>(nullable: true),
-                    Zip = table.Column<string>(nullable: true),
+                    Zipcode = table.Column<string>(nullable: true),
                     AppUserId = table.Column<string>(nullable: false)
                 },
                 constraints: table =>

@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Identity.Migrations
 {
     [DbContext(typeof(AppIdentityDbContext))]
-    [Migration("20200617080214_IdentityInitial")]
-    partial class IdentityInitial
+    [Migration("20200619081436_IdentityMigration")]
+    partial class IdentityMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -43,7 +43,7 @@ namespace Infrastructure.Identity.Migrations
                     b.Property<string>("Street")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Zip")
+                    b.Property<string>("Zipcode")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
