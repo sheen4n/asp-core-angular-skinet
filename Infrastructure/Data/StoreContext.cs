@@ -27,6 +27,8 @@ namespace Infrastructure.Data
       base.OnModelCreating(modelBuilder);
       modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
+
+
       if (Database.ProviderName == "Microsoft.EntityFrameworkCore.Sqlite")
       {
         modelBuilder.Model.GetEntityTypes().ToList().ForEach(
